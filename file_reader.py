@@ -10,6 +10,6 @@ def read_file_into_dictionary(file_name):
     dic = {}
     with open(file_name) as file:
         for line in file:
-            (key, val) = line.split('=')
+            (key, val) = line.split()
             dic[(key)] = val
     return dic
